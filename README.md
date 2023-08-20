@@ -28,6 +28,17 @@ To run this project locally, follow these steps:
 3. Adjust the configuration settings in `internal/config/config.go` to match your MongoDB setup.
 4. Run the application using `go run cmd/main.go`.
 
+
+## Available routes:
+- http://localhost:8080/api/users
+- http://localhost:8080/api/users/{id}
+- http://localhost:8080/api/users
+- http://localhost:8080/api/users/{id}
+- http://localhost:8080/api/users/{id}
+
+Server is running at 
+- http://localhost:8080
+
 ## Contributions
 
 Contributions to this project are welcome! If you find any issues, have suggestions, or want to add new features, feel free to open an issue or submit a pull request.
@@ -37,3 +48,6 @@ Before contributing, please read the [CONTRIBUTING.md](CONTRIBUTING.md) file for
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+
