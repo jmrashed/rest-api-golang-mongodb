@@ -10,8 +10,6 @@ import (
 
 func SetupRoutes() *mux.Router {
 	r := mux.NewRouter()
-
-	// Define your API routes here
 	r.HandleFunc("/api/users", handler.ListUsers).Methods(http.MethodGet)
 	r.HandleFunc("/api/users/{id}", handler.GetUser).Methods(http.MethodGet)
 	r.HandleFunc("/api/users", handler.CreateUser).Methods(http.MethodPost)

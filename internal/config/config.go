@@ -11,9 +11,9 @@ type AppConfig struct {
 }
 
 func LoadConfig() (*AppConfig, error) {
-	mongoURI := os.Getenv("MONGO_URI")
+	mongoURI := os.Getenv("MONGODB_URL")
 	if mongoURI == "" {
-		return nil, fmt.Errorf("MONGO_URI environment variable is not set")
+		return nil, fmt.Errorf("MONGODB_URL environment variable is not set")
 	}
 
 	// Add more configuration loading logic here
